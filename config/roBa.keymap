@@ -71,39 +71,41 @@
 &kp Q         &kp W         &kp E                 &kp R        &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A         &kp S         &kp D                 &kp F        &kp G             &trans                         &kp TAB            &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z         &kp X         &kp C                 &kp V        &kp B             &lt 6 LEFT_BRACKET             &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
-&kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &lt 2 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1    &lt 4 BACKSPACE    &lt 5 ENTER                             &kp DEL
+&kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &lt 2 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1    &lt 4 BACKSPACE    &lt 5 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        num1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                           &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
+&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans       &trans      &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
+&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTRK        &kp SLASH        &kp EQUAL    &trans      &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
+&trans           &trans           &trans           &trans           &trans           &trans       &kp DELETE  &trans                                                    &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                     &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
-&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp LC(LA(KP_NUMBER_0))    &trans  &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
-&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &kp EQUAL                  &trans  &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
-&trans           &trans           &trans           &trans           &trans           &trans                     &trans  &trans                                                    &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                         &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
+&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp LC(LA(KP_NUMBER_0))    &trans      &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
+&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &kp EQUAL                  &trans      &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
+&trans           &trans           &trans           &trans           &trans           &trans                     &kp DELETE  &trans                                                    &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         layer3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&trans          &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         MOUSE {
@@ -126,13 +128,13 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &kp SCROLLLOCK                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans          &trans    &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans          &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
         };
     };
 };
