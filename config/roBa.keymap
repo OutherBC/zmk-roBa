@@ -80,7 +80,7 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E                 &kp R        &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S         &kp D                 &kp F        &kp G             &trans                         &kp TAB            &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A         &kp S         &kp D                 &kp F        &kp G             &trans                         &kp LEFT_SHIFT     &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z         &kp X         &kp C                 &kp V        &kp B             &lt 6 LEFT_BRACKET             &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
 &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &lt 2 LANGUAGE_2  &lt_to_layer_0 3 LANGUAGE_1    &lt 4 BACKSPACE    &lt 5 ENTER                             &kp ESCAPE
             >;
@@ -139,10 +139,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                         &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4
-&trans  &trans        &trans        &new_macro    &trans  &trans    &trans       &trans        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &bootloader  &trans        &trans             &trans            &trans           &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans    &trans       &trans                                                              &bt BT_CLR_ALL
+&trans          &trans        &trans        &trans           &trans                                  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4
+&trans          &trans        &trans        &kp KP_NUMBER_3  &kp KP_NUMBER_4  &trans    &trans       &trans        &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP  &trans
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &trans           &trans    &bootloader  &trans        &trans             &trans            &trans           &bt BT_CLR
+&trans          &trans        &trans        &trans           &trans           &trans    &trans       &trans                                                              &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
