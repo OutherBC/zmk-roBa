@@ -17,8 +17,8 @@
     combos {
         compatible = "zmk,combos";
 
-        leftparenth {
-            bindings = <&kp LEFT_PARENTHESIS>;
+        kagikakkoL {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <12 13>;
         };
 
@@ -27,9 +27,19 @@
             key-positions = <0 1>;
         };
 
-        rightpareth {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+        kagikakkoR {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
+        };
+
+        marukakkoL {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <3 2>;
+        };
+
+        marukakkoR {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
         };
     };
 
@@ -69,10 +79,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E                 &kp R        &kp T                                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D                 &kp F        &kp G             &trans                         &kp NUMBER_4       &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C                 &kp V        &kp B             &lt 6 LEFT_BRACKET             &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
-&kp LEFT_WIN      &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &lt 2 LANGUAGE_1  &lt_to_layer_0 3 LANGUAGE_2    &lt 4 BACKSPACE    &lt 5 ENTER                             &kp ESCAPE
+&kp Q                  &kp W               &kp E                 &kp R        &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                  &kp S               &kp D                 &kp F        &kp G             &trans                  &kp NUMBER_4      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z                  &kp X               &kp C                 &kp V        &kp B             &lt 6 LANGUAGE_1        &lt 2 LANGUAGE_2  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
+&mt LEFT_WIN QUESTION  &mt LEFT_ALT SLASH  &mt LEFT_SHIFT COLON  &lt 1 SPACE  &kp LEFT_CONTROL  &lt_to_layer_0 3 TAB    &lt 4 BACKSPACE   &lt 5 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -80,19 +90,19 @@
 
         num1 {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                 &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
-&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans                  &trans                 &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
-&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTRK        &kp SLASH        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
-&trans           &trans           &trans           &trans           &trans           &trans                  &kp DELETE             &trans                                                    &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                        &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
+&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans    &trans      &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
+&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTRK        &kp SLASH        &trans    &trans      &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
+&trans           &trans           &trans           &trans           &trans           &trans    &kp DELETE  &trans                                                    &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                                    &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
-&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp LC(LA(KP_NUMBER_0))    &trans                 &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
-&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
-&trans           &trans           &trans           &trans           &trans           &trans                     &kp DELETE             &trans                                                    &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                                         &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
+&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp LC(LA(KP_NUMBER_0))    &trans      &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &trans
+&kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTERISK     &kp SLASH        &trans                     &trans      &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
+&trans           &trans           &trans           &trans           &trans           &trans                     &kp DELETE  &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -100,10 +110,10 @@
 
         mouse1 {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                                                 &trans  &trans                &trans     &trans                 &trans
-&trans          &trans  &trans  &trans  &trans  &trans                  &trans                 &trans  &mkp MB1              &mkp MB3   &mkp MB2               &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &kp LG(LEFT_BRACKET)  &kp LC(W)  &kp LG(RIGHT_BRACKET)  &trans
-&trans          &trans  &trans  &trans  &trans  &trans                  &trans                 &trans                                                          &trans
+&trans          &trans  &trans  &trans  &trans                    &trans  &trans                &trans     &trans                 &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1              &mkp MB3   &mkp MB2               &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LC(W)  &kp LG(RIGHT_BRACKET)  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -111,10 +121,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                 &trans     &trans                &trans    &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                 &trans     &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LG(W)  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans                 &trans                                                            &trans
+&trans  &trans  &trans  &trans  &trans                    &trans     &trans                &trans    &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(W)  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
