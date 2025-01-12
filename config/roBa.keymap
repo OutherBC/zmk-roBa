@@ -17,24 +17,19 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
+        leftparenth {
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <12 13>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <13 11>;
-        };
-
-        leftpareth {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 27>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
         };
 
         rightpareth {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <28 18>;
+            key-positions = <18 19>;
         };
     };
 
