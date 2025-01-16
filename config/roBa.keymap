@@ -84,10 +84,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E                 &kp R        &kp T                                                    &kp Y         &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D                 &kp F        &kp G        &trans                    &kp NUMBER_4      &kp H         &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C                 &kp V        &kp B        &lt 6 LANGUAGE_1          &lt 2 LANGUAGE_2  &kp N         &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
-&kp LEFT_WIN      &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &lt 2 SPACE  &lt_to_layer_0 3 MINUS    &lt 4 BACKSPACE   &lt 5 DELETE                             &kp ESCAPE
+&kp Q             &kp W         &kp E                 &kp R        &kp T                                                   &kp Y       &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D                 &kp F        &kp G             &trans              &lt 6 NUMBER_4    &kp H       &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C                 &kp V        &kp B             &lt 3 LANGUAGE_1    &lt 4 LANGUAGE_2  &lt 5 N     &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
+&kp LEFT_WIN      &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE  &kp LEFT_CONTROL  &lt 2 MINUS         &kp BACKSPACE     &kp DELETE                             &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -100,6 +100,8 @@
 &kp LEFT_SHIFT   &kp PLUS         &kp MINUS        &kp ASTRK        &kp SLASH        &trans    &trans  &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
 &trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans                                                    &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         NUM {
@@ -142,6 +144,8 @@
 &trans     &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR  &trans    &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN   &trans           &trans
 &trans     &trans                &trans             &trans                 &trans      &trans    &trans  &trans                                                   &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer_6 {
