@@ -91,7 +91,7 @@
 &kp LEFT_WIN      &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 1 SPACE         &kp LEFT_CONTROL  &lt 2 MINUS         &kp BACKSPACE     &kp DELETE                                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         num1 {
