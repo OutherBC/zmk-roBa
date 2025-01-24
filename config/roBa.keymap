@@ -87,7 +87,7 @@
             bindings = <
 &kp Q               &kp W         &kp E                 &kp R               &kp T                                          &kp Y            &kp U            &kp I            &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S         &mt LEFT_ALT D        &mt LEFT_COMMAND F  &kp G        &trans            &mo 6           &kp H            &mt RIGHT_GUI J  &mt RIGHT_ALT K  &kp L    &kp ENTER
-&kp Z               &kp X         &kp C                 &kp V               &kp B        &mo 3             &mo 3           &lt 5 N          &kp M            &kp COMMA        &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
+&kp Z               &kp X         &kp C                 &kp V               &kp B        &mo 4             &mo 4           &lt 5 N          &lt 5 M          &kp COMMA        &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
 &kp LEFT_WIN        &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mo 1               &lt 1 SPACE  &kp LEFT_SHIFT    &lt 3 CAPSLOCK  &lt 5 BACKSPACE                                             &kp ESCAPE
             >;
 
