@@ -47,6 +47,16 @@
             bindings = <&kp MINUS>;
             key-positions = <20 21>;
         };
+
+        minus2 {
+            bindings = <&kp MINUS>;
+            key-positions = <19 20>;
+        };
+
+        minus3 {
+            bindings = <&kp MINUS>;
+            key-positions = <18 21>;
+        };
     };
 
     macros {
