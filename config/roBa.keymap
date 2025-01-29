@@ -64,12 +64,12 @@
         };
 
         kana {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <22 23>;
         };
 
         eisu {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <33 32>;
         };
     };
