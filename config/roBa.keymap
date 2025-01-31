@@ -43,21 +43,6 @@
             key-positions = <18 20>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <20 21>;
-        };
-
-        minus2 {
-            bindings = <&kp MINUS>;
-            key-positions = <19 20>;
-        };
-
-        minus3 {
-            bindings = <&kp MINUS>;
-            key-positions = <18 21>;
-        };
-
         minus4 {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
