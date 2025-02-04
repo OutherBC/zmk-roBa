@@ -43,8 +43,8 @@
             key-positions = <18 20>;
         };
 
-        minus4 {
-            bindings = <&kp MINUS>;
+        esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <8 9>;
         };
 
@@ -56,6 +56,11 @@
         eisu {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <33 32>;
+        };
+
+        layer6 {
+            bindings = <&mo 6>;
+            key-positions = <33 22>;
         };
     };
 
