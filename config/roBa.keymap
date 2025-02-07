@@ -100,10 +100,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E                 &kp R   &kp T                                                      &kp Y          &kp U  &kp I        &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D                 &kp F   &kp G        &trans                &trans                  &kp H          &kp J  &kp K        &kp L    &lt 3 ENTER
-&mt LEFT_SHIFT Z    &kp X         &kp C                 &kp V   &lt 5 B      &trans                &trans                  &lt 5 N        &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
-&kp LEFT_WIN        &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &trans  &lt 1 SPACE  &mt LEFT_GUI MINUS    &mt RIGHT_ALT QUESTION  &kp BACKSPACE                               &kp ESCAPE
+&kp Q               &kp W         &kp E                 &kp R      &kp T                                                              &kp Y          &kp U  &kp I        &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D                 &kp F      &kp G        &trans                     &trans                     &kp H          &kp J  &kp K        &kp L    &lt 3 ENTER
+&mt LEFT_SHIFT Z    &kp X         &kp C                 &kp V      &lt 5 B      &trans                     &trans                     &lt 5 N        &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_SHIFT EXCLAMATION
+&kp LEFT_WIN        &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &kp MINUS  &lt 1 SPACE  &mt LEFT_GUI LEFT_ARROW    &mt RIGHT_ALT RIGHT_ARROW  &kp BACKSPACE                               &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -155,10 +155,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans                    &trans    &trans          &kp UP_ARROW    &trans           &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans    &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans    &kp PAGE_UP     &kp PAGE_DOWN   &trans           &trans
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                                                     &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans                    &trans              &trans          &kp UP_ARROW    &trans           &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans    &trans  &kp RG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RG(RIGHT_ARROW)
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans              &kp PAGE_DOWN   &trans          &kp PAGE_UP      &trans
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
