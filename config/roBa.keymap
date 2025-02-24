@@ -45,12 +45,12 @@
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <26 25>;
+            key-positions = <29 30>;
         };
 
         eisu {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <29 30>;
+            key-positions = <26 25>;
         };
     };
 
