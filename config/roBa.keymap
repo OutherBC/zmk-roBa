@@ -23,11 +23,6 @@
             key-positions = <12 13>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-        };
-
         kagikakkoR {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
@@ -50,22 +45,12 @@
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <22 23>;
+            key-positions = <26 25>;
         };
 
         eisu {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <33 32>;
-        };
-
-        layer6 {
-            bindings = <&mo 6>;
-            key-positions = <4 3>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <21 20>;
+            key-positions = <29 30>;
         };
     };
 
@@ -105,10 +90,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E                 &kp R                    &kp T                                                           &kp Y            &kp U  &kp I        &kp O    &mt RIGHT_GUI P
-&mt LEFT_CONTROL A  &kp S         &kp D                 &kp F                    &kp G      &trans                     &kp SLASH                 &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
-&kp Z               &kp X         &kp C                 &kp V                    &lt 5 B    &mt LEFT_ALT LANGUAGE_2    &mt RIGHT_ALT LANGUAGE_1  &lt 5 N          &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_ALT EXCLAMATION
-&kp LEFT_WIN        &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mt LEFT_GUI LANGUAGE_2  &lt 1 TAB  &mt LEFT_SHIFT SPACE       &mt RIGHT_SHIFT ENTER     &lt 5 BACKSPACE                               &kp ESCAPE
+&kp Q               &kp W         &kp E                 &kp R                    &kp T                                                     &kp Y            &kp U  &kp I        &kp O    &mt RIGHT_GUI P
+&mt LEFT_CONTROL A  &kp S         &kp D                 &kp F                    &kp G      &trans                  &mo 6                  &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
+&kp Z               &kp X         &kp C                 &kp V                    &lt 5 B    &mt LEFT_ALT COLON      &mt RIGHT_ALT SLASH    &lt 5 N          &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_ALT EXCLAMATION
+&kp LEFT_WIN        &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mt LEFT_GUI LANGUAGE_2  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
