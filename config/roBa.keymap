@@ -160,10 +160,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans                    &trans              &trans          &kp UP_ARROW    &trans           &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans    &trans  &kp RG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RG(RIGHT_ARROW)
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans              &kp PAGE_DOWN   &trans          &kp PAGE_UP      &trans
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                                                               &trans
+&trans              &trans          &msc SCRL_UP    &trans           &trans                                 &trans              &trans          &kp UP_ARROW    &trans           &trans
+&kp LC(LEFT_ARROW)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp RC(RIGHT_ARROW)  &trans    &trans  &kp RG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RG(RIGHT_ARROW)
+&trans              &trans          &trans          &trans           &trans               &trans    &trans  &trans              &kp PAGE_DOWN   &trans          &kp PAGE_UP      &trans
+&trans              &trans          &trans          &trans           &trans               &trans    &trans  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
