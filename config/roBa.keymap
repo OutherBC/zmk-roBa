@@ -89,10 +89,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E   &kp R   &kp T                                                                    &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S         &kp D   &kp F   &kp G      &kp ESCAPE                      &lt 6 RG(RS(KP_NUMBER_4))     &kp H            &kp J  &kp K      &kp L    &lt 3 MINUS
-&kp Z         &kp X         &kp C   &kp V   &lt 5 B    &mt LEFT_ALT LC(RIGHT_ARROW)    &mt RIGHT_ALT RC(LEFT_ARROW)  &kp N            &kp M  &kp COMMA  &kp DOT  &kp EXCLAMATION
-&kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &lt 1 TAB  &mt LEFT_SHIFT SPACE            &mt RIGHT_SHIFT ENTER         &lt 5 BACKSPACE                             &kp QUESTION
+&kp Q  &kp W  &kp E             &kp R         &kp T                                                                    &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D             &kp F         &kp G      &kp ESCAPE                      &lt 6 RG(RS(KP_NUMBER_4))     &kp H            &kp J  &kp K      &kp L    &lt 3 MINUS
+&kp Z  &kp X  &kp C             &kp V         &lt 5 B    &mt LEFT_ALT LC(RIGHT_ARROW)    &mt RIGHT_ALT RC(LEFT_ARROW)  &kp N            &kp M  &kp COMMA  &kp DOT  &kp EXCLAMATION
+&none  &none  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 TAB  &mt LEFT_SHIFT SPACE            &mt RIGHT_SHIFT ENTER         &lt 5 BACKSPACE                             &kp QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -100,10 +100,10 @@
 
         num1 {
             bindings = <
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp KP_NUMBER_4  &kp KP_NUMBER_5                     &kp AMPERSAND   &kp AT           &kp PLUS   &kp ASTERISK  &kp SEMI
-&kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp KP_NUMBER_0   &trans    &trans  &kp EQUAL       &kp EXCLAMATION  &kp MINUS  &kp QUESTION  &kp HASH
-&kp GRAVE        &kp LEFT_BRACE   &kp DOUBLE_QUOTES  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &trans    &trans  &kp UNDERSCORE  &kp SLASH        &kp COLON  &kp PERCENT   &kp QUESTION
-&trans           &trans           &trans             &trans           &trans            &trans    &trans  &kp DELETE                                                &trans
+&kp KP_NUMBER_1    &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4        &kp KP_NUMBER_5                            &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH         &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &trans    &trans         &kp PLUS         &kp ASTERISK     &kp SLASH        &kp PERCENT      &kp HASH
+&kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp RIGHT_PARENTHESIS  &kp DOLLAR        &trans    &trans         &kp UNDERSCORE   &kp LEFT_BRACE   &kp COLON        &kp RIGHT_BRACE  &kp SEMICOLON
+&kp CARET          &kp TILDE             &kp LC(GRAVE)    &trans                 &trans            &trans    &kp BACKSPACE  &kp DELETE                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -144,10 +144,10 @@
 
         Scroll {
             bindings = <
-&trans              &trans          &msc SCRL_UP    &trans           &trans                                 &trans              &trans          &kp UP_ARROW    &trans           &trans
-&kp LC(LEFT_ARROW)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp RC(RIGHT_ARROW)  &trans    &trans  &kp RG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RG(RIGHT_ARROW)
-&trans              &trans          &trans          &trans           &trans               &trans    &trans  &trans              &kp PAGE_DOWN   &trans          &kp PAGE_UP      &trans
-&trans              &trans          &trans          &trans           &trans               &trans    &trans  &trans                                                               &trans
+&trans              &trans          &msc SCRL_UP    &trans           &trans                                         &trans              &trans          &kp UP_ARROW    &trans           &trans
+&kp LC(LEFT_ARROW)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp RC(RIGHT_ARROW)  &trans            &trans  &kp RG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RG(RIGHT_ARROW)
+&trans              &trans          &trans          &trans           &trans               &trans            &trans  &trans              &kp PAGE_DOWN   &trans          &kp PAGE_UP      &trans
+&trans              &trans          &trans          &trans           &kp LANGUAGE_2       &kp LANGUAGE_1    &trans  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
