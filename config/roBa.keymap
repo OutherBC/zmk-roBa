@@ -94,8 +94,6 @@
 &kp Z       &kp X                    &kp C             &kp V         &kp B      &mt LEFT_ALT LC(UP_ARROW)    &mt RIGHT_ALT RC(DOWN_ARROW)  &kp N            &kp M  &lt 5 COMMA  &kp DOT  &kp EXCLAMATION
 &kp ESCAPE  &kp LG(LS(KP_NUMBER_4))  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 TAB  &mt LEFT_SHIFT SPACE         &mt RIGHT_SHIFT ENTER         &lt 5 BACKSPACE                               &kp QUESTION
             >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         num1 {
