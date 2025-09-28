@@ -121,7 +121,7 @@
         mouse1 {
             bindings = <
 &kp LG(Q)  &kp LG(W)  &trans     &trans     &kp LG(T)                       &trans         &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
-&trans     &kp LG(S)  &trans     &kp LG(F)  &trans     &trans    &trans     &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans     &trans    &trans     &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
 &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans     &trans         &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
 &trans     &trans     &trans     &trans     &trans     &trans    &kp RG(W)  &kp BACKSPACE                                                         &trans
             >;
