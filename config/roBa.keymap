@@ -89,10 +89,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W           &kp E             &kp R         &kp T                                                                 &kp Y            &kp U  &kp I        &kp O    &kp P
-&kp A       &kp S           &kp D             &kp F         &kp G      &kp LANGUAGE_2               &lt 6 LANGUAGE_1              &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
-&kp Z       &kp X           &kp C             &kp V         &kp B      &mt LEFT_ALT LC(UP_ARROW)    &mt RIGHT_ALT RC(DOWN_ARROW)  &kp N            &kp M  &lt 5 COMMA  &kp DOT  &kp EXCLAMATION
-&kp ESCAPE  &kp LG(LS(N4))  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 1 TAB  &mt LEFT_SHIFT SPACE         &mt RIGHT_SHIFT ENTER         &lt 5 BACKSPACE                               &kp QUESTION
+&kp Q         &kp W      &kp E           &kp R  &kp T                                                   &kp Y            &kp U  &kp I        &kp O    &kp P
+&kp A         &kp S      &kp D           &kp F  &kp G    &lt 6 LC(UP_ARROW)      &kp RC(DOWN_ARROW)     &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
+&kp Z         &kp X      &kp C           &kp V  &kp B    &kp LEFT_ALT            &kp RIGHT_ALT          &kp N            &kp M  &lt 5 COMMA  &kp DOT  &lt 6 DELETE
+&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &mo 1  &kp TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &kp ESCAPE
             >;
         };
 
@@ -120,10 +120,10 @@
 
         mouse1 {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                       &trans  &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
-&trans          &trans  &trans  &trans  &trans  &trans    &trans     &trans  &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
-&trans          &trans  &trans  &trans  &trans  &trans    &kp RG(W)  &trans                                                         &trans
+&kp LG(Q)  &kp LG(W)  &trans     &trans     &kp LG(T)                       &trans         &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
+&trans     &kp LG(S)  &trans     &kp LG(F)  &trans     &trans    &trans     &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans     &trans         &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
+&trans     &trans     &trans     &trans     &trans     &trans    &kp RG(W)  &kp BACKSPACE                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -153,10 +153,10 @@
 
         layer_6 {
             bindings = <
-&trans          &trans                   &trans       &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4
-&kp LC(LS(A))   &kp LG(LS(KP_NUMBER_4))  &trans       &trans  &trans  &trans    &trans  &trans        &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
-&trans          &trans                   &trans       &trans  &trans  &trans    &trans  &trans        &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
-&bt BT_CLR_ALL  &bt BT_CLR               &bootloader  &trans  &trans  &trans    &trans  &trans                                                              &trans
+&trans          &trans          &trans       &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4
+&kp LC(LS(A))   &kp LG(LS(N4))  &trans       &trans  &trans  &trans    &trans  &trans        &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
+&trans          &trans          &trans       &trans  &trans  &trans    &trans  &trans        &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
+&bt BT_CLR_ALL  &bt BT_CLR      &bootloader  &trans  &trans  &trans    &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOLUME_DOWN)>;
