@@ -89,10 +89,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W      &kp E           &kp R  &kp T                                                     &kp Y            &kp U  &kp I        &kp O    &kp P
-&lt 2 A       &kp S      &kp D           &kp F  &kp G      &lt 6 LC(UP_ARROW)      &kp RC(DOWN_ARROW)     &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
-&kp Z         &kp X      &kp C           &kp V  &kp B      &mt LEFT_ALT AT         &mt RIGHT_ALT HASH     &kp N            &kp M  &lt 5 COMMA  &kp DOT  &lt 6 DELETE
-&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &mo 5  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &mt RIGHT_GUI ESCAPE
+&kp Q         &kp W      &kp E           &kp R     &kp T                                                     &kp Y            &kp U  &kp I        &kp O    &kp P
+&lt 2 A       &kp S      &kp D           &kp F     &kp G      &lt 6 LC(UP_ARROW)      &kp RC(DOWN_ARROW)     &kp H            &kp J  &kp K        &kp L    &lt 3 MINUS
+&kp Z         &kp X      &kp C           &kp V     &kp B      &kp LEFT_ALT            &kp RIGHT_ALT          &kp N            &kp M  &lt 5 COMMA  &kp DOT  &lt 6 DELETE
+&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &kp EXCL  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &mt RIGHT_GUI ESCAPE
             >;
         };
 
@@ -112,7 +112,7 @@
 &trans  &trans          &trans  &trans          &trans                    &trans  &trans    &trans  &trans         &trans
 &trans  &kp LANGUAGE_2  &trans  &kp LANGUAGE_1  &trans  &trans    &trans  &trans  &kp HASH  &kp AT  &kp AMPERSAND  &kp UNDER
 &trans  &trans          &trans  &trans          &trans  &trans    &trans  &trans  &trans    &trans  &trans         &trans
-&trans  &trans          &trans  &trans          &trans  &trans    &trans  &trans                                   &trans
+&trans  &trans          &trans  &kp QUESTION    &trans  &trans    &trans  &trans                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -142,10 +142,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans          &trans         &trans          &trans                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&trans  &kp LANGUAGE_2  &kp LC(SPACE)  &kp LANGUAGE_1  &trans  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans  &trans          &trans         &trans          &trans  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_DOWN       &trans          &kp PAGE_UP          &trans
-&trans  &trans          &trans         &trans          &trans  &trans                 &trans              &trans                                                           &trans
+&trans  &trans  &trans  &trans        &trans                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&trans  &trans  &trans  &trans        &trans  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&trans  &trans  &trans  &trans        &trans  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_DOWN       &trans          &kp PAGE_UP          &trans
+&trans  &trans  &trans  &kp QUESTION  &trans  &trans                 &trans              &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
