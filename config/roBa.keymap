@@ -144,7 +144,7 @@
             bindings = <
 &trans  &trans  &trans  &trans        &trans                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
 &trans  &trans  &trans  &trans        &trans  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans  &trans  &trans  &trans        &trans  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_DOWN       &trans          &kp PAGE_UP          &trans
+&trans  &trans  &trans  &trans        &trans  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &trans
 &trans  &trans  &trans  &kp QUESTION  &trans  &trans                 &trans              &trans                                                           &trans
             >;
 
