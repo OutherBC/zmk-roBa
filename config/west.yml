@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v3.4.0   # <-- 「main」から安定版「v3.4.0」に固定します
+      revision: v3.4   # 「.0」を削除し、「v3.4」に
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
-      revision: main       # <-- これは元のままで、v3.4.0と互換性があるはずです
+      revision: v3.4   # 「main」から「v3.4」に
   self:
     path: config
