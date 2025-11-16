@@ -2,15 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kumamuk-git
-      url-base: https://github.com/kumamuk-git
+    # kumamuk-git と shibafu528 の remote 定義は削除
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: kumamuk-git
-      revision: v3.5
+      url: https://github.com/shibafu528/zmk-pmw3610-driver # <-- 部品のURLを直接指定します
+      revision: main
   self:
     path: config
