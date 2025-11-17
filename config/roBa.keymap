@@ -84,10 +84,12 @@
         };
 
         // ▼追加した設定: 判定時間の短いレイヤー切り替え▼
+
         lt_short: lt_short {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_SHORT";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
@@ -99,19 +101,19 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W       &kp E            &kp R      &kp T                                            &kp Y             &kp U  &kp I        &kp O    &kp P
-&kp A         &kp S       &kp D            &lt 2 F    &kp G       &lt 6 LC(UP_ARROW)       &lt 7 LC(DOWN_ARROW)    &kp H             &kp J  &lt_short 5 K       &kp L    &lt 3 MINUS
-&kp Z         &kp X       &kp C            &kp V      &kp B       &kp LEFT_ALT             &kp RIGHT_ALT           &kp N             &kp M  &lt 5 COMMA  &kp DOT  &lt 6 QUESTION
-&kp LEFT_GUI  &kp LCTRL   &kp LG(LS(N4))   &kp EXCL   &lt 1 TAB   &mt LEFT_SHIFT SPACE     &mt RIGHT_SHIFT ENTER   &lt 5 BACKSPACE                                  &mt RIGHT_GUI ESCAPE
+&kp Q         &kp W      &kp E           &kp R    &kp T                                                     &kp Y            &kp U  &kp I          &kp O    &kp P
+&kp A         &kp S      &kp D           &lt 2 F  &kp G      &lt 6 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)   &kp H            &kp J  &lt_short 5 K  &kp L    &lt 3 MINUS
+&kp Z         &kp X      &kp C           &kp V    &kp B      &kp LEFT_ALT            &kp RIGHT_ALT          &kp N            &kp M  &lt 5 COMMA    &kp DOT  &lt 6 QUESTION
+&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &mo 2    &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                                 &mt RIGHT_GUI ESCAPE
             >;
         };
 
         num1 {
             bindings = <
-&kp KP_NUMBER_1    &kp KP_NUMBER_2       &kp KP_NUMBER_3      &kp KP_NUMBER_4      &kp KP_NUMBER_5                                  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH             &kp RIGHT_BRACKET    &kp SINGLE_QUOTE  &trans             &trans        &kp PLUS         &kp ASTERISK     &kp SLASH        &kp PERCENT      &kp EQUAL
-&kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp AT_SIGN          &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp LC(RIGHT)      &kp LC(LEFT_ARROW)  &kp UNDERSCORE   &kp LEFT_BRACE   &kp COLON        &kp RIGHT_BRACE  &kp SEMICOLON
-&kp CARET          &kp TILDE             &kp LC(GRAVE)        &trans               &trans            &trans             &kp BACKSPACE      &kp DELETE                                                          &trans
+&kp KP_NUMBER_1    &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4        &kp KP_NUMBER_5                                        &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH         &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &trans           &trans              &kp PLUS         &kp ASTERISK     &kp SLASH        &kp PERCENT      &kp EQUAL
+&kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp LC(RIGHT)    &kp LC(LEFT_ARROW)  &kp UNDERSCORE   &kp LEFT_BRACE   &kp COLON        &kp RIGHT_BRACE  &kp SEMICOLON
+&kp CARET          &kp TILDE             &kp LC(GRAVE)    &trans                 &trans            &trans           &kp BACKSPACE       &kp DELETE                                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -119,10 +121,10 @@
 
         noNUM {
             bindings = <
-&kp AT_SIGN  &kp HASH        &kp AMPERSAND   &trans        &trans                                      &trans  &trans  &trans  &trans  &trans
-&trans       &kp LANGUAGE_2  &kp LANGUAGE_1  &trans        &trans       &trans            &trans       &trans  &trans  &trans  &trans  &trans
-&trans       &trans          &trans          &trans        &trans       &trans            &trans       &trans  &trans  &trans  &trans  &trans
-&trans       &trans          &trans          &kp QUESTION  &kp EXCLAMATION  &kp QUESTION      &trans       &trans                          &trans
+&kp AT_SIGN  &kp HASH        &kp AMPERSAND   &trans        &trans                                   &trans  &trans  &trans  &trans  &trans
+&trans       &kp LANGUAGE_2  &kp LANGUAGE_1  &trans        &trans           &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans          &trans          &trans        &trans           &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans          &trans          &kp QUESTION  &kp EXCLAMATION  &kp QUESTION    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -130,10 +132,10 @@
 
         mouse1 {
             bindings = <
-&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)     &kp LG(T)                        &trans         &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)     &kp LG(G)  &trans      &trans      &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(B)  &trans      &trans      &trans         &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
-&trans     &trans     &trans     &kp QUESTION  &trans     &trans      &kp RG(W)  &kp BACKSPACE                                                        &trans
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)     &kp LG(T)                       &trans         &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)     &kp LG(G)  &trans    &trans     &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(B)  &trans    &trans     &trans         &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
+&trans     &trans     &trans     &kp QUESTION  &trans     &trans    &kp RG(W)  &kp BACKSPACE                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -141,10 +143,10 @@
 
         noMOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -152,10 +154,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans        &trans                                                       &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW     &kp LG(RIGHT_ARROW)  &kp QUESTION
-&trans  &trans  &trans  &trans        &trans  &trans                  &trans                       &trans  &kp LEFT_ARROW      &kp DOWN_ARROW   &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans  &trans  &trans  &trans        &trans  &kp RC(RIGHT_ARROW)     &kp RC(LEFT_ARROW)           &trans  &kp PAGE_UP         &trans           &kp PAGE_DOWN        &trans
-&trans  &trans  &trans  &kp QUESTION  &trans  &trans                  &trans                       &trans                                                            &trans
+&trans  &trans  &trans  &trans        &trans                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&trans  &trans  &trans  &trans        &trans  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&trans  &trans  &trans  &trans        &trans  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &trans
+&trans  &trans  &trans  &kp QUESTION  &trans  &trans                 &trans              &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
@@ -163,10 +165,10 @@
 
         layer_6 {
             bindings = <
-&trans         &trans         &trans  &trans         &trans                                     &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4
-&kp LC(LS(A))  &kp LG(LS(S))  &trans  &kp LG(LS(F))  &trans  &trans        &trans               &kp LG(LS(H))  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
-&trans         &trans         &trans  &trans         &trans  &trans        &trans               &kp LG(LS(N))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
-&trans         &trans         &trans  &trans         &trans  &trans        &kp LG(ENTER)  &trans                                                            &trans
+&trans         &trans         &trans  &trans         &trans                           &bt BT_SEL 0   &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4
+&kp LC(LS(A))  &kp LG(LS(S))  &trans  &kp LG(LS(F))  &trans  &trans    &trans         &kp LG(LS(H))  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
+&trans         &trans         &trans  &trans         &trans  &trans    &trans         &kp LG(LS(N))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
+&trans         &trans         &trans  &trans         &trans  &trans    &kp LG(ENTER)  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOLUME_DOWN)>;
@@ -174,10 +176,10 @@
 
         layer_7 {
             bindings = <
-&trans       &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&bootloader  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL      &bt BT_CLR  &trans                          &trans
+&trans       &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans            &trans      &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans            &trans      &trans  &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL    &bt BT_CLR  &trans                          &trans
             >;
         };
     };
