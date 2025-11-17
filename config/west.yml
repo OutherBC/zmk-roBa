@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
-      revision: v3.5
+      revision: main  # <-- ここを「v3.5」から「main」に変更しました
   self:
     path: config
