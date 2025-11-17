@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: inorichi # kumamuk-git の代わりに、v3.5対応版の作者を指定
-      url-base: https://github.com/inorichi
+    - name: kumamuk-git
+      url-base: https://github.com/kumamuk-git
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main # ZMK本体は最新のまま
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi # こちらも inorichi を指定
-      revision: v3.5    # ZMK本体のバージョン(v3.5)に一致させます
+      remote: kumamuk-git
+      revision: main
   self:
     path: config
