@@ -109,10 +109,10 @@
 
         noNUM {
             bindings = <
-&kp HASH        &kp AT          &kp AMPERSAND   &trans          &trans                    &trans  &trans  &trans  &trans  &trans
-&kp LANGUAGE_2  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp LANGUAGE_1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans          &trans  &trans    &trans  &trans                          &trans
+&kp HASH  &kp AT                &kp AMPERSAND  &trans                 &trans                    &trans  &trans  &trans  &trans  &trans
+&trans    &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans                &trans         &trans                 &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans                &trans         &trans                 &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
