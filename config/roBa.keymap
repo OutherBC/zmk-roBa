@@ -18,28 +18,13 @@
         compatible = "zmk,combos";
 
         kagikakkoL {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
         };
 
         kagikakkoR {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <18 19>;
-        };
-
-        marukakkoL {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 11>;
-        };
-
-        marukakkoR {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <18 20>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <8 9>;
         };
 
         kana {
