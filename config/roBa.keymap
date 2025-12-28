@@ -17,24 +17,14 @@
     combos {
         compatible = "zmk,combos";
 
-        kagikakkoL {
+        eisu {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <12 13>;
         };
 
-        kagikakkoR {
+        hiragana {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <18 19>;
-        };
-
-        kana {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <30 31>;
-        };
-
-        eisu {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <25 24>;
         };
     };
 
