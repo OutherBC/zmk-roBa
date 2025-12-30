@@ -95,10 +95,10 @@
 
         mouse1 {
             bindings = <
-&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)     &kp LG(T)                       &trans          &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)     &kp LG(G)  &trans    &trans     &trans          &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(B)  &trans    &trans     &trans          &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
-&trans     &trans     &trans     &kp QUESTION  &trans     &trans    &kp RG(W)  &kp LANGUAGE_1                                                         &trans
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)                       &trans          &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &trans    &trans     &trans          &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans     &trans          &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
+&trans     &trans     &trans     &trans     &trans     &trans    &kp RG(W)  &kp LANGUAGE_1                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
