@@ -64,10 +64,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W      &kp E           &kp R  &kp T                                                     &kp Y            &kp U  &kp I        &kp O    &kp P
-&lt 4 A       &kp S      &kp D           &kp F  &kp G      &lt 6 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)   &kp H            &kp J  &lt 5 K      &kp L    &lt 3 MINUS
-&kp Z         &kp X      &kp C           &kp V  &kp B      &kp LEFT_ALT            &kp RIGHT_ALT          &kp N            &kp M  &lt 5 COMMA  &kp DOT  &lt 6 QUESTION
-&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &mo 2  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &mt RIGHT_GUI ESCAPE
+&kp Q         &kp W      &kp E           &kp R          &kp T                                                     &kp Y            &kp U  &kp I        &kp O    &kp P
+&lt 4 A       &kp S      &kp D           &kp F          &kp G      &lt 6 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)   &kp H            &kp J  &lt 5 K      &kp L    &lt 3 MINUS
+&kp Z         &kp X      &kp C           &kp V          &kp B      &kp LEFT_ALT            &kp RIGHT_ALT          &kp N            &kp M  &lt 5 COMMA  &kp DOT  &lt 6 QUESTION
+&kp LEFT_GUI  &kp LCTRL  &kp LG(LS(N4))  &kp LC(SPACE)  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE                               &mt RIGHT_GUI ESCAPE
             >;
         };
 
@@ -95,10 +95,10 @@
 
         mouse1 {
             bindings = <
-&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)     &kp LG(T)                       &trans         &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
-&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)     &kp LG(G)  &trans    &trans     &trans         &mkp MB1              &mkp MB3  &mkp MB2               &trans
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(B)  &trans    &trans     &trans         &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
-&trans     &trans     &trans     &kp QUESTION  &trans     &trans    &kp RG(W)  &kp BACKSPACE                                                         &trans
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)     &kp LG(T)                       &trans          &kp RG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)     &kp LG(G)  &trans    &trans     &trans          &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)     &kp LG(B)  &trans    &trans     &trans          &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
+&trans     &trans     &trans     &kp QUESTION  &trans     &trans    &kp RG(W)  &kp LANGUAGE_1                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -106,10 +106,10 @@
 
         noMOUSE {
             bindings = <
-&trans  &trans  &trans          &trans          &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans          &trans          &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &kp LANGUAGE_2  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
