@@ -94,10 +94,10 @@
 
         noMOUSE {
             bindings = <
-&kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))                    &trans  &trans  &trans  &trans  &trans
-&trans                &kp LANGUAGE_2        &trans                &kp LANGUAGE_1        &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &trans                &trans                &trans                &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &trans                &trans                &trans                &trans          &trans    &trans  &trans                          &trans
+&trans  &trans          &trans  &trans          &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LANGUAGE_2  &trans  &kp LANGUAGE_1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans          &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
