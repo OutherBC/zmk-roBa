@@ -105,10 +105,10 @@
 
         Scroll {
             bindings = <
-&kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&kp LA(LC(NUMBER_6))  &kp LA(LC(N7))        &kp LA(LC(N8))        &kp LA(LC(N9))        &kp LA(LC(N0))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans                &trans                &trans                &trans                &trans          &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
-&trans                &trans                &trans                &trans                &trans          &trans                 &trans              &trans                                                           &trans
+&kp LA(LC(K))       &kp LA(LC(L))      &kp LA(LC(Y))      &kp LA(LC(U))           &kp LA(LC(J))                                                       &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&kp LA(LC(PERIOD))  &kp LA(LC(COMMA))  &kp LA(LC(COLON))  &kp LA(LC(LEFT_BRACE))  &kp LA(LC(RIGHT_BRACE))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&trans              &trans             &trans             &trans                  &trans                   &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
+&trans              &trans             &trans             &trans                  &trans                   &trans                 &trans              &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
