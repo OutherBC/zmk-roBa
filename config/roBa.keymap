@@ -106,7 +106,7 @@
         Scroll {
             bindings = <
 &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&kp LA(LC(NUMBER_6))  &kp LA(LC(N7))        &kp LA(LC(N8))        &kp LA(LC(N9))        &kp LA(LC(N0))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
 &trans                &trans                &trans                &trans                &trans          &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
 &trans                &trans                &trans                &trans                &trans          &trans                 &trans              &trans                                                           &trans
             >;
