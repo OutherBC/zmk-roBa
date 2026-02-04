@@ -94,10 +94,10 @@
 
         noMOUSE {
             bindings = <
-&kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))                    &trans  &trans  &trans  &trans  &trans
-&trans                 &kp LANGUAGE_2         &trans                 &kp LANGUAGE_1         &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                 &trans                 &trans                 &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                 &trans                 &trans                 &trans                 &trans    &trans  &trans                          &trans
+&kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))                    &trans  &trans  &trans  &trans  &trans
+&trans                        &kp LANGUAGE_2                &trans                        &kp LANGUAGE_1                &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                        &trans                        &trans                        &trans                        &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                        &trans                        &trans                        &trans                        &trans                  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -105,10 +105,10 @@
 
         Scroll {
             bindings = <
-&kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans                 &trans                 &trans                 &trans                 &trans                 &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
-&trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &trans              &trans                                                           &trans
+&kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LG(LC(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&trans                        &trans                        &trans                        &trans                        &trans                  &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
+&trans                        &trans                        &trans                        &trans                        &trans                  &trans                 &trans              &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
