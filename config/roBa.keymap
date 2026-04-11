@@ -24,7 +24,7 @@
 
         eiji {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <2 3>;
+            key-positions = <24 25>;
         };
 
         kana {
