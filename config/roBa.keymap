@@ -21,6 +21,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
         };
+
+        kana {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 12>;
+        };
+
+        eisu {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <3 2>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <20 19>;
+        };
     };
 
     macros {
@@ -59,10 +74,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W      &kp E         &kp R          &kp T                                                    &kp Y  &kp U  &kp I        &kp O    &lt 6 P
-&lt 4 A                &kp S      &kp D         &kp F          &kp G      &lt 2 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)  &kp H  &kp J  &lt 5 K      &kp L    &lt 3 MINUS
-&kp Z                  &kp X      &kp C         &kp V          &kp B      &mt LEFT_ALT F11        &kp LG(LS(NUMBER_4))  &kp N  &kp M  &lt 5 COMMA  &kp DOT  &mt LEFT_GUI SLASH
-&mt LEFT_SHIFT ESCAPE  &kp LCTRL  &kp LEFT_GUI  &kp BACKSPACE  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &mo 5                               &kp RIGHT_SHIFT
+&mt LEFT_GUI Q    &kp W      &kp E         &kp R         &kp T                                                    &kp Y  &kp U  &kp I        &kp O    &mt RIGHT_GUI P
+&lt 4 A           &kp S      &kp D         &kp F         &kp G      &lt 2 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)  &kp H  &kp J  &lt 5 K      &kp L    &lt 3 MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V         &kp B      &mt LEFT_ALT F11        &kp LG(LS(NUMBER_4))  &kp N  &kp M  &lt 5 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESCAPE        &kp LCTRL  &kp CAPSLOCK  &kp QUESTION  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &mo 5                               &mo 6
             >;
         };
 
@@ -112,10 +127,10 @@
 
         Scroll {
             bindings = <
-&kp LA(LC(K))  &kp LA(LC(L))  &kp LA(LC(Y))  &kp LA(LC(U))  &kp LA(LC(J))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&kp LA(LC(G))  &kp LA(LC(I))  &kp LA(LC(M))  &kp LA(LC(R))  &kp LA(LC(T))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
-&trans         &trans         &trans         &trans         &trans         &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
-&trans         &trans         &trans         &kp DELETE     &trans         &trans                 &trans              &trans                                                           &trans
+&kp LA(LC(K))  &kp LA(LC(L))  &kp LA(LC(Y))  &kp LA(LC(U))    &kp LA(LC(J))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&kp LA(LC(G))  &kp LA(LC(I))  &kp LA(LC(M))  &kp LA(LC(R))    &kp LA(LC(T))  &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&trans         &trans         &trans         &trans           &trans         &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
+&trans         &trans         &trans         &kp EXCLAMATION  &trans         &trans                 &trans              &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
