@@ -22,14 +22,14 @@
             key-positions = <18 19>;
         };
 
-        kana {
+        eiji {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <13 12>;
+            key-positions = <2 3>;
         };
 
-        eisu {
+        kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <3 2>;
+            key-positions = <12 13>;
         };
 
         delete {
