@@ -77,7 +77,7 @@
 &mt LEFT_GUI Q  &kp W      &kp E                    &kp R           &kp T                                                    &kp Y             &kp U  &kp I        &kp O    &mt RIGHT_GUI P
 &lt 4 A         &kp S      &kp D                    &kp F           &kp G      &lt 2 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)  &kp H             &kp J  &lt 5 K      &kp L    &lt 3 MINUS
 &kp Z           &kp X      &kp C                    &kp V           &kp B      &mt LEFT_ALT F11        &kp LG(LS(NUMBER_4))  &kp N             &kp M  &lt 5 COMMA  &kp DOT  &lt 6 SLASH
-&kp HASH        &kp LCTRL  &mt LS(LEFT_GUI) ESCAPE  &kp LANGUAGE_2  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &lt 5 LANGUAGE_1                               &kp DELETE
+&kp LEFT_GUI    &kp LCTRL  &mt LS(LEFT_GUI) ESCAPE  &kp LANGUAGE_2  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &lt 5 LANGUAGE_1                               &kp DELETE
             >;
         };
 
