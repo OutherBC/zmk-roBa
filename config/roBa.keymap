@@ -14,9 +14,8 @@
 };
 
 /* 【修正箇所】エラーの原因だった tap-ms を削除し、triggers-per-rotation のみにしました */
-&sensors {
-    triggers-per-rotation = <8>;
-};
+
+&sensors { triggers-per-rotation = <8>; };
 
 / {
     combos {
@@ -25,16 +24,6 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
-        };
-
-        eiji {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <24 25>;
-        };
-
-        kana {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <12 13>;
         };
 
         delete {
@@ -79,13 +68,13 @@
 
         default_layer {
             bindings = <
-&mt LEFT_GUI Q  &kp W      &kp E       &kp R               &kp T                                                                                   &kp Y               &kp U  &kp I        &kp O    &mt RIGHT_GUI P
-&lt 4 A         &kp S      &kp D       &kp F               &kp G      &lt 2 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)  &kp H               &kp J  &lt 5 K      &kp L    &lt 3 MINUS
-&kp Z           &kp X      &kp C       &kp V               &kp B      &mt LEFT_ALT F11        &kp LG(LS(NUMBER_4))  &kp N               &kp M  &lt 5 COMMA  &kp DOT  &lt 6 SLASH
-&kp LEFT_GUI    &kp LCTRL  &kp ESCAPE  &kp LEFT_CONTROL    &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &lt 5 LANGUAGE_1                               &kp DELETE
+&mt LEFT_GUI Q  &kp W      &kp E       &kp R             &kp T                                                    &kp Y             &kp U  &kp I        &kp O    &mt RIGHT_GUI P
+&lt 4 A         &kp S      &kp D       &kp F             &kp G      &lt 2 LC(UP_ARROW)      &lt 7 LC(DOWN_ARROW)  &kp H             &kp J  &lt 5 K      &kp L    &lt 3 MINUS
+&kp Z           &kp X      &kp C       &kp V             &kp B      &mt LEFT_ALT F11        &kp LG(LS(NUMBER_4))  &kp N             &kp M  &lt 5 COMMA  &kp DOT  &lt 6 SLASH
+&kp LEFT_GUI    &kp LCTRL  &kp ESCAPE  &kp LEFT_CONTROL  &lt 1 TAB  &mt LEFT_SHIFT SPACE    &kp ENTER             &lt 5 LANGUAGE_1                               &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         num1 {
@@ -96,7 +85,7 @@
 &kp CARET          &kp TILDE             &kp LC(GRAVE)    &trans                 &trans            &trans           &trans              &kp LANGUAGE_2                                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         noNUM {
@@ -112,13 +101,13 @@
 
         mouse1 {
             bindings = <
-&trans  &trans     &kp LG(E)  &kp LG(R)  &kp LG(T)                        &trans  &kp RG(LEFT_BRACKET)  &trans  &kp RG(RIGHT_BRACKET)  &trans
-&trans  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &trans    &trans      &trans  &mkp MB1              &trans  &mkp MB2               &trans
-&trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans      &trans  &kp LC(LS(TAB))       &trans  &kp LC(TAB)            &trans
+&trans  &trans     &kp LG(E)  &kp LG(R)  &kp LG(T)                       &trans  &kp RG(LEFT_BRACKET)  &trans  &kp RG(RIGHT_BRACKET)  &trans
+&trans  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &trans    &trans     &trans  &mkp MB1              &trans  &mkp MB2               &trans
+&trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans    &trans     &trans  &kp LC(LS(TAB))       &trans  &kp LC(TAB)            &trans
 &trans  &trans     &trans     &trans     &trans     &trans    &kp RG(W)  &trans                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
+            sensor-bindings = <&inc_dec_kp LG(Z) LG(Y)>;
         };
 
         noMOUSE {
@@ -134,13 +123,13 @@
 
         Scroll {
             bindings = <
-&kp LA(LC(K))  &kp LA(LC(L))  &kp LA(LC(Y))  &kp LA(LC(U))  &kp LA(LC(J))                                             &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
-&kp LA(LC(G))  &kp LA(LC(I))  &kp LA(LC(M))  &kp LA(LC(R))  &kp LA(LC(T))   &trans                 &trans             &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
+&kp LA(LC(K))  &kp LA(LC(L))  &kp LA(LC(Y))  &kp LA(LC(U))  &kp LA(LC(J))                                              &trans  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp QUESTION
+&kp LA(LC(G))  &kp LA(LC(I))  &kp LA(LC(M))  &kp LA(LC(R))  &kp LA(LC(T))   &trans                 &trans              &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EXCLAMATION
 &trans         &trans         &trans         &trans         &trans          &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP         &trans          &kp PAGE_DOWN        &kp EXCLAMATION
-&trans         &trans         &trans         &trans         &kp LANGUAGE_2  &trans                 &trans             &trans                                                           &trans
+&trans         &trans         &trans         &trans         &kp LANGUAGE_2  &trans                 &trans              &trans                                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
+            sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
         };
 
         layer_6 {
@@ -148,10 +137,10 @@
 &trans         &trans         &trans  &trans         &trans                    &trans         &trans             &trans            &trans           &trans
 &kp LC(LS(A))  &kp LG(LS(S))  &trans  &kp LG(LS(F))  &trans  &trans    &trans  &kp LG(LS(H))  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
 &trans         &trans         &trans  &trans         &trans  &trans    &trans  &kp LG(LS(N))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &trans
-&trans         &trans         &trans  &trans         &trans  &trans    &trans  &trans                                                             &trans
+&trans         &trans         &trans  &trans         &trans  &trans    &trans  &trans                                                               &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_7 {
