@@ -13,10 +13,9 @@
     quick-tap-ms = <0>;
 };
 
-/* 【追加箇所】ロータリーエンコーダーの過敏さを抑える設定 */
+/* 【修正箇所】エラーの原因だった tap-ms を削除し、triggers-per-rotation のみにしました */
 &sensors {
     triggers-per-rotation = <8>;
-    tap-ms = <5>;
 };
 
 / {
