@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_GUI Q      &kp W        &kp E       &kp R             &kp T                                                       &kp Y    &kp U  &kp I        &kp O    &mt RIGHT_GUI P
-&lt 4 A             &kp S        &kp D       &kp F             &kp G      &lt 2 LC(UP_ARROW)         &lt 7 LC(DOWN_ARROW)  &kp H    &kp J  &lt 5 K      &kp L    &lt 3 MINUS
-&kp Z               &kp X        &kp C       &kp V             &kp B      &mt LEFT_ALT LANGUAGE_1    &kp LANGUAGE_2        &kp N    &kp M  &lt 5 COMMA  &kp DOT  &lt 6 SLASH
-&kp LG(LEFT_ARROW)  &kp LG(TAB)  &kp ESCAPE  &kp LEFT_CONTROL  &lt 1 TAB  &mt LEFT_SHIFT SPACE       &kp ENTER             &lt 5 N                               &kp RG(RIGHT_ARROW)
+&mt LEFT_GUI Q  &kp W          &kp E          &kp R             &kp T                                                       &kp Y    &kp U  &kp I        &kp O    &mt RIGHT_GUI P
+&lt 4 A         &kp S          &kp D          &kp F             &kp G      &lt 2 LC(UP_ARROW)         &lt 7 LC(DOWN_ARROW)  &kp H    &kp J  &lt 5 K      &kp L    &lt 3 MINUS
+&kp Z           &kp X          &kp C          &kp V             &kp B      &mt LEFT_ALT LANGUAGE_1    &kp LANGUAGE_2        &kp N    &kp M  &lt 5 COMMA  &kp DOT  &lt 6 SLASH
+&kp ESCAPE      &kp RA(RC(G))  &kp RG(RS(N))  &kp LEFT_CONTROL  &lt 1 TAB  &mt LEFT_SHIFT SPACE       &kp ENTER             &lt 5 N                               &kp RG(RS(NUMBER_4))
             >;
 
             sensor-bindings = <&inc_dec_kp LANGUAGE_1 LANGUAGE_2>;
@@ -79,10 +79,10 @@
 
         num1 {
             bindings = <
-&kp KP_NUMBER_1    &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4        &kp KP_NUMBER_5                                           &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH         &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &trans            &kp LC(UP_ARROW)      &kp PLUS         &kp ASTERISK     &kp SLASH        &kp PERCENT      &kp EQUAL
-&kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp LANGUAGE_2    &kp LG(LS(NUMBER_4))  &kp UNDERSCORE   &kp LEFT_BRACE   &kp COLON        &kp RIGHT_BRACE  &kp PIPE
-&kp CARET          &kp TILDE             &kp LC(GRAVE)    &trans                 &trans            &trans            &trans                &trans                                                              &trans
+&kp KP_NUMBER_1    &kp KP_NUMBER_2       &kp KP_NUMBER_3  &kp KP_NUMBER_4        &kp KP_NUMBER_5                                   &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp HASH         &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &trans    &trans                &kp PLUS         &kp ASTERISK     &kp SLASH        &kp PERCENT      &kp EQUAL
+&kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp RIGHT_PARENTHESIS  &kp DOLLAR        &trans    &kp LG(LS(NUMBER_4))  &kp UNDERSCORE   &kp LEFT_BRACE   &kp COLON        &kp RIGHT_BRACE  &kp PIPE
+&kp CARET          &kp TILDE             &kp LC(GRAVE)    &trans                 &trans            &trans    &trans                &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
@@ -112,10 +112,10 @@
 
         noMOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RC(M)  &trans                          &trans
+&trans  &trans          &trans  &trans          &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &kp LANGUAGE_1  &trans  &kp LANGUAGE_2  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans          &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans          &trans  &trans    &kp RC(M)  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -123,10 +123,10 @@
 
         Scroll {
             bindings = <
-&kp LA(LC(K))  &kp LA(LC(L))    &kp LA(LC(Y))  &kp LA(LC(U))  &kp LA(LC(J))                                             &trans  &trans          &kp UP_ARROW    &trans           &kp QUESTION
-&kp LA(LC(G))  &kp LA(LC(I))    &kp LA(LC(M))  &kp LA(LC(R))  &kp LA(LC(T))  &trans                 &trans              &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EXCLAMATION
-&trans         &trans           &trans         &trans         &trans         &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP     &trans          &kp PAGE_DOWN    &kp EXCLAMATION
-&trans         &kp LG(LS(TAB))  &trans         &trans         &trans         &trans                 &trans              &trans                                                   &trans
+&kp LA(LC(K))  &kp LA(LC(L))  &kp LA(LC(Y))  &kp LA(LC(U))  &kp LA(LC(J))                                             &trans  &trans          &kp UP_ARROW    &trans           &kp QUESTION
+&kp LA(LC(G))  &kp LA(LC(I))  &kp LA(LC(M))  &kp LA(LC(R))  &kp LA(LC(T))  &trans                 &trans              &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EXCLAMATION
+&trans         &trans         &trans         &trans         &trans         &kp RC(RIGHT_ARROW)    &kp RC(LEFT_ARROW)  &trans  &kp PAGE_UP     &trans          &kp PAGE_DOWN    &trans
+&trans         &trans         &trans         &trans         &trans         &trans                 &trans              &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
