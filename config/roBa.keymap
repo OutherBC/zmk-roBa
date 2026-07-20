@@ -113,7 +113,7 @@
         noMOUSE {
             bindings = <
 &trans  &trans          &trans  &trans          &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &kp LANGUAGE_1  &trans  &kp LANGUAGE_2  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &kp LANGUAGE_2  &trans  &kp LANGUAGE_1  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans          &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans          &trans  &trans    &kp RC(M)  &trans                          &trans
             >;
