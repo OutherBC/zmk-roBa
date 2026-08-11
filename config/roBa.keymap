@@ -112,10 +112,10 @@
 
         noMOUSE {
             bindings = <
-&trans  &trans          &trans  &trans          &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &kp LANGUAGE_2  &trans  &kp LANGUAGE_1  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans          &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans          &trans  &trans    &kp RC(M)  &trans                          &trans
+&trans  &trans  &trans          &trans          &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans  &trans    &kp RC(M)  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
