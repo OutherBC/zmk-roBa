@@ -40,11 +40,6 @@
             bindings = <&kp LANGUAGE_2>;
             key-positions = <11 12>;
         };
-
-        eisu2 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <10 11>;
-        };
     };
 
     macros {
